@@ -12,11 +12,13 @@
       margin: 0;
       padding: 0;
     }
+
     .container {
       max-width: 600px;
       margin: auto;
       padding: 20px;
     }
+
     .banner {
       width: 100%;
       height: 200px;
@@ -24,74 +26,86 @@
       border-radius: 10px;
       border: 2px solid #d1d1d1;
     }
+
     .profile-box {
       display: flex;
       align-items: center;
-      margin-top: 10px;
+      margin-top: 15px;
       padding: 10px 0;
     }
+
     .profile-img {
       width: 80px;
       height: 80px;
       border-radius: 50%;
       border: 3px solid #d1d1d1;
       background: #333;
-      background-image: url('https://tripodencok.github.io/TB-assets/profil.png');
+      background-image: url('https://tripodencok.github.io/TB_assets-1/img/profile.png');
       background-size: cover;
       background-position: center;
       margin-right: 15px;
     }
+
     .profile-info {
       display: flex;
       flex-direction: column;
     }
+
     .nickname {
       font-size: 20px;
       font-weight: bold;
     }
+
     .realname {
       font-size: 13px;
       color: #aaa;
     }
-    .button {
-      display: block;
-      width: 90%;
-      margin: 15px auto;
-      padding: 10px 14px;
-      font-size: 14px;
-      background: #1f1f1f;
-      color: white;
+
+    .web {
+      background: #1c1c1c;
       border: 2px solid #d1d1d1;
-      border-radius: 12px;
-      cursor: pointer;
-      text-align: center;
-      transition: all 0.2s ease;
-      text-decoration: none;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 25px 0;
     }
-    .button:hover {
-      background: #292929;
-      transform: scale(1.03);
-    }
-    .preview-img {
+
+    .web-btn {
+  display: block;
   width: 100%;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-top: 30px;   
-  margin-bottom: -15px;
+  padding: 14px;
+  font-size: 16px;
+  background: #1f1f1f;
+  color: white;
   border: 2px solid #d1d1d1;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s ease;
+  box-sizing: border-box;
 }
+
+    .web-btn:hover {
+      background: #292929;
+      transform: scale(1.02);
     }
-    table {
-      border: 2px solid #d1d1d1;
+
+    .web-info p {
+      margin: 8px 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .web-info strong {
+      color: #eee;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="https://tripodencok.github.io/TB-assets/banner.png" alt="Banner" class="banner">
+    <!-- Banner -->
+    <img src="https://tripodencok.github.io/TB_assets-1/img/banner.png" alt="Banner" class="banner">
 
-    <div class="profile-box">
+        <div class="profile-box">
       <div class="profile-img"></div>
       <div class="profile-info">
         <div class="nickname">Tripodbengkok</div>
@@ -110,31 +124,15 @@
       </table>
     </div>
 
-    <!-- Web Links -->
-    <div style="margin-top: 20px;">
-
-      <h3 style="text-align:center; margin-top:30px;">basic link</h3>
-
-      <img src="https://tripodencok.github.io/TB-assets/github_profile.png" class="preview-img" alt="GitHub profile" />
-      <a href="https://github.com/tripodencok" class="button" target="_blank">GitHub</a>
-
-      <img src="https://tripodencok.github.io/TB-assets/discord_invite.png" class="preview-img" alt="Discord link" />
-      <a href="https://discord.com/invite/Mns7UrS3M2" class="button" target="_blank">Discord</a>
-
-      <h3 style="text-align:center; margin-top:30px;">GitHub Script</h3>
-
-      <img src="https://tripodencok.github.io/TB-assets/TBtools.png" class="preview-img" alt="TBtools Banner" />
-      <a href="https://tripodencok.github.io/TBtools/" class="button" target="_blank">TBtools</a>
-
-      <img src="https://tripodencok.github.io/TB-assets/TBconverter.png" class="preview-img" alt="TB Converter Banner" />
-      <a href="https://tripodencok.github.io/TBconverter/" class="button" target="_blank">TB converter</a>
-
-      <img src="https://tripodencok.github.io/TB-assets/txconverter.png" class="preview-img" alt="Text Converter Banner" />
-      <a href="https://tripodencok.github.io/textconverter/" class="button" target="_blank">text converter</a>
-
-     <div class="preview-text">ㅤ</div>
-      <a href="https://tripodencok.github.io/TB-viewscript/" class="button" target="_blank">See More</a>
-
+    <!-- web -->
+    <div class="web">
+      <a href="https://tripodencok.github.io/TB_assets-1/viewscript.html" class="web-btn" target="_blank">See Script</a>
+      <div class="web-info">
+        <p><strong>Description:</strong> See more complete tools</p>
+        <p><strong>Feature:</strong> List all other public projects</p>
+        <p><strong>NameURL:</strong> viewscript</p>
+        <p><strong>URL:</strong> https://tripodencok.github.io/TB_assets-1/script/viewscript.html</p>
+      </div>
     </div>
   </div>
 </body>
